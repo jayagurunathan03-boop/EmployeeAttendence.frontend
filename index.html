@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>ABC Company</h1>
+        <p>Employee Attendance Management System</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Attendance Form -->
+        <section class="card">
+            <h2>Employee Attendance Form</h2>
+
+            <form id="attendanceForm">
+
+                <div class="form-group">
+                    <label for="empId">Employee ID</label>
+                    <input type="text" id="empId" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="empName">Employee Name</label>
+                    <input type="text" id="empName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <input type="text" id="department" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="workingDays">Working Days</label>
+                    <input type="number" id="workingDays" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="presentDays">Present Days</label>
+                    <input type="number" id="presentDays" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="leaveDays">Leave Days</label>
+                    <input type="number" id="leaveDays" required>
+                </div>
+
+                <button type="submit">Submit Attendance</button>
+
+            </form>
+        </section>
+
+        <!-- Attendance Report -->
+        <section class="card">
+            <h2>Attendance Report</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Working Days</th>
+                        <th>Present Days</th>
+                        <th>Leave Days</th>
+                        <th>Attendance %</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="reportBody">
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
